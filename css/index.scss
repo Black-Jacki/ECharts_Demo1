@@ -40,7 +40,7 @@ header {
         top: 0;
         line-height: 1rem;
         color: rgba(255, 255, 255, 0.7);
-        font-size: 0.25rem;
+        font-size: .375rem;
         font-family: 'SHOWG';
     }
 }
@@ -129,11 +129,15 @@ header {
             text-align: center;
             font-size: 0.25rem;
             font-weight: normal;
+            a {
+                color: #fff;
+                text-decoration: none;
+                margin-left: .25rem;
+            }
         }
 
         .chart {
-            height: 3.5rem;
-            padding-top: 20px;
+            height: 3.25rem;
         }
     }
 }

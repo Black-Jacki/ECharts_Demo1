@@ -15,12 +15,17 @@
     </header>
     <section class="mainbox">
         <div class="column">
-            <div class="panel bar">
-                <div id="left-top" class="chart"></div>
+            <div class="panel bar-left">
+                <h2>柱形图-纵向布局</h2>
+                <div class="chart"></div>
                 <div class="panel-footer"></div>
             </div>
-            <div class="panel line">
-                <h2>柱形图-就业行业</h2>
+            <div class="panel line-left">
+                <h2>
+                    折线图-人员变化
+                    <a href="javascript:;">2020</a>
+                    <a href="javascript:;">2021</a>
+                </h2>
                 <div class="chart"></div>
                 <div class="panel-footer"></div>
             </div>
@@ -53,13 +58,13 @@
             </div>
         </div>
         <div class="column">
-            <div class="panel bar">
-                <h2>柱形图-就业行业</h2>
+            <div class="panel bar-right">
+                <h2>柱形图-横向布局</h2>
                 <div class="chart"></div>
                 <div class="panel-footer"></div>
             </div>
-            <div class="panel line">
-                <h2>柱形图-就业行业</h2>
+            <div class="panel line-right">
+                <h2>折线图-区域渐变</h2>
                 <div class="chart"></div>
                 <div class="panel-footer"></div>
             </div>
@@ -74,49 +79,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/echarts.min.js"></script>
     <script src="js/index.js"></script>
-    <script>
-        // 基于准备好的dom，初始化echarts实例
-        const myCharts = echarts.init(document.querySelector('#left-top', ), 'light')
-
-        // 指定图表的配置项和数据
-        const option = {
-            textStyle: {
-                color: '#fff',
-            },
-            title: {
-                text: 'ECharts 柱形图',
-                textStyle: {
-                    color: '#fff',
-                },
-            },
-            tooltip: {},
-            legend: {
-                data: ['销量'],
-                textStyle: {
-                    color: '#fff',
-                },
-            },
-            grid: {
-                left: '3%',
-                right: '3%',
-                top: '25%',
-                bottom: '0%',
-                containLabel: true
-            },
-            xAxis: {
-                data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"]
-            },
-            yAxis: {},
-            series: [{
-                name: '销量',
-                type: 'bar',
-                data: [5, 20, 36, 10, 10, 20]
-            }]
-        }
-
-        // 使用刚指定的配置项和数据显示图表。
-        myCharts.setOption(option);
-    </script>
 </body>
 
 </html>
