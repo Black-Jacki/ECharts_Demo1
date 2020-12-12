@@ -13,6 +13,7 @@ body {
   width: 100vw;
   height: 100vh;
   line-height: 1.15;
+  overflow: hidden;
 }
 
 header {
@@ -118,6 +119,7 @@ header .showTime {
 }
 .mainbox .panel .chart {
   height: 3.5rem;
+  padding-top: 20px;
 }
 
 .no {
